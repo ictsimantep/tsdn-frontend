@@ -8,16 +8,16 @@ export interface IHealth {
   systol: string;
   diastol: string;
   profesi: string;
-  risk: string;
-  bmi: string;
-  recommendation_food: string;
-  recommendation_sport: string;
-  recommendation_medicine: string;
+  risk?: string; // Mark as optional
+  bmi?: string;  // Mark as optional
+  recommendation_food?: string; // Mark as optional
+  recommendation_sport?: string; // Mark as optional
+  recommendation_medicine?: string; // Mark as optional
   uuid?: string;
 }
 
 export interface IUpdateHealth {
-  data: IHealths;
+  data: IHealth;
   id: string;
   uuid?: string;
 }

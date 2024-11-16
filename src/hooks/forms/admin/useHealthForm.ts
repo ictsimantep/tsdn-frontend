@@ -8,8 +8,20 @@ import { useGetHealth } from "./useGetHealth";
 import { useMemo } from "react";
 
 const defaultValues = {
-  key: "",
-  value: "",
+  nama: "",
+  jenis_kelamin: "",
+  umur: "",
+  bb: "",
+  tb: "",
+  systol: "",
+  diastol: "", 
+  heart_rate: "",
+  profesi: "",
+  risk: "",
+  bmi: "",
+  recommendation_food: "",
+  recommendation_sport: "",
+  recommendation_medicine: "",
   uuid: "",
 };
 
@@ -24,8 +36,20 @@ export const useHealthForm = () => {
   const values = useMemo(() => {
     if (!data) return defaultValues;
     return {
-      key: data.key,
-      value: data.value,
+      nama: data.nama,
+      jenis_kelamin: data.jenis_kelamin,
+      umur: data.umur,
+      bb: data.bb,
+      tb: data.tb,
+      systol: data.systol,
+      diastol: data.diastol,
+      heart_rate: data.heart_rate,
+      profesi: data.profesi,
+      risk: "",
+      bmi: "",
+      recommendation_food: "",
+      recommendation_sport: "",
+      recommendation_medicine: "",
       uuid: data.uuid,
     };
   }, [data]);

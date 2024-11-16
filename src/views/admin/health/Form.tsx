@@ -130,7 +130,7 @@ export default function AdminHealthForm() {
 
             <Box sx={{ marginBottom: "1rem" }}>
               <Controller
-                name="age"
+                name="umur"
                 control={form.control}
                 rules={{ required: "Age is required" }} // Add validation rule
                 render={({ field }) => (
@@ -149,7 +149,7 @@ export default function AdminHealthForm() {
 
             <Box sx={{ marginBottom: "1rem" }}>
               <Controller
-                name="weight"
+                name="bb"
                 control={form.control}
                 rules={{ required: "Weight is required" }} // Add validation rule
                 render={({ field }) => (
@@ -168,7 +168,7 @@ export default function AdminHealthForm() {
 
             <Box sx={{ marginBottom: "1rem" }}>
               <Controller
-                name="height"
+                name="tb"
                 control={form.control}
                 rules={{ required: "Height is required" }} // Add validation rule
                 render={({ field }) => (
@@ -236,6 +236,25 @@ export default function AdminHealthForm() {
                     placeholder="Please input a Hearth Rate of person"
                     error={!!errors.heart_rate} // Show error state
                     helperText={errors.heart_rate?.message} // Display error message
+                    {...field}
+                  />
+                )}
+              />
+            </Box>
+
+            <Box sx={{ marginBottom: "1rem" }}>
+              <Controller
+                name="profesi"
+                control={form.control}
+                rules={{ required: "Profession is required" }} // Add validation rule
+                render={({ field }) => (
+                  <CustomTextField
+                    fullWidth
+                    type="text"
+                    label="Profession"
+                    placeholder="Please input a Profession of person"
+                    error={!!errors.profesi} // Show error state
+                    helperText={errors.profesi?.message} // Display error message
                     {...field}
                   />
                 )}
