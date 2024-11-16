@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  masterschool-frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: masterschool-frontend
+    ports:
+      - "1002:3000"
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - .:/app
+    #command: npm run start
