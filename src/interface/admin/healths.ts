@@ -1,6 +1,6 @@
 export interface IHealths {
   id?: string;
-  name: string;
+  nama: string;
   jenis_kelamin: string;
   umur: string;
   bb: string;
