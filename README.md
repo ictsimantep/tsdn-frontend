@@ -1,4 +1,4 @@
-# Pengembangan Aplikasi Berbasis Web untuk Pendeteksian Dini Penyakit Tidak Menular (PTM)  
+# Pengembangan Aplikasi Berbasis Web untuk Pendeteksian Dini Penyakit Tidak Menular (PTM) - Penyakit Jantung  
 **Berdasarkan Data Kesehatan Individu sebagai Upaya Pencegahan dan Edukasi Masyarakat**
 
 ---
