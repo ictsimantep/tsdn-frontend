@@ -8,6 +8,7 @@ export interface IHealth {
   systol: string;
   diastol: string;
   profesi: string;
+  heart_rate: string;
   risk?: string; // Mark as optional
   bmi?: string;  // Mark as optional
   recommendation_food?: string; // Mark as optional
